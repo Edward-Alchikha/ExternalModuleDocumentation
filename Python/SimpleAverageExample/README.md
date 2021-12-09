@@ -64,13 +64,16 @@ With the gRPC service running you can now connect to it in dDock using the "Remo
 For this example, the settings you'll want to choose when you drag it onto the drawing board are:
 
 1. Change the "Proto Source" field to "Proto String" since this simple example server does not support the "Server
-   Reflection" option.<br/>
+   Reflection" option:
+   <br/>
    ![Step 1](Screenshots/SettingsStepOne.png)
    <br/><br/>
 
 2. Copy the text from example.proto and paste it into the text area:
+   <br/>
    ![Step 2](Screenshots/SettingsStepTwo.png)
    <br/><br/>
 
-3. Since "Average" is the only method provided by this server, it will be the default and you can just press OK.
+3. Since "Average" is the only method provided by this server, it will be the default and you can just press OK:
+   <br/>
    ![Step 3](Screenshots/SettingsStepThree.png)
