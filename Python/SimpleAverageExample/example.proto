@@ -1,0 +1,25 @@
+syntax = "proto3";
+import "google/protobuf/timestamp.proto";
+
+service Example {
+  rpc Average(stream Input) returns (stream Output);
+}
+
+message Input {
+  repeated InputDatum Data = 1;
+}
+
+message Output {
+  repeated OutputDatum Data = 1;
+}
+
+message InputDatum {
+  google.protobuf.Timestamp DateTime = 1;
+  double Value1 = 2;
+  double Value2 = 3;
+}
+
+message OutputDatum {
+  google.protobuf.Timestamp DateTime = 1;
+  double Value = 2;
+}
